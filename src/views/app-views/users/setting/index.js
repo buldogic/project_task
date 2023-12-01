@@ -6,7 +6,7 @@ const SettingContent = ({ match }) => {
 	return (
 		<Switch>
 			<Redirect exact from={`${match.url}`} to={`${match.url}/edit-profile`} />
-			<Route path={`${match.url}/edit-profile`} component= { (...args) => < EditProfile {...args} userId={match.params.userId} />} />
+			<Route path={`${match.url}/edit-profile`} component= { () => < EditProfile  userId={match.params.userId} />} />
 		</Switch>
 	)
 }

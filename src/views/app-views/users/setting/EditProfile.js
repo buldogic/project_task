@@ -74,7 +74,6 @@ export class EditProfile extends Component {
     reader.readAsDataURL(img);
   }
   render() {
-    console.log("this.state", this.state);
 
     const onFinish = (values) => {
       const key = "updatable";
